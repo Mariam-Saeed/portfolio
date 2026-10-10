@@ -1,3 +1,4 @@
+import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { Hero } from "@/components/sections/hero/Hero";
 import { OpenSource } from "@/components/sections/open-source/OpenSource";
@@ -12,6 +13,7 @@ export default function Home() {
         <Projects />
         <OpenSource />
       </main>
+      <Footer />
     </div>
   );
 }
