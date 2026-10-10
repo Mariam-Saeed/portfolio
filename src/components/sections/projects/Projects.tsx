@@ -19,7 +19,7 @@ export function Projects() {
         />
         Selected Work
       </h2>
-      <ol className="mt-6 space-y-10 lg:space-y-6">
+      <ol className="mt-6 space-y-10 max-sm:space-y-6 lg:space-y-6">
         {projects.map((project, index) => (
           <li key={project.id}>
             <ProjectCard project={project} number={index + 1} />

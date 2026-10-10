@@ -4,7 +4,7 @@ import { siteConfig } from "@/data/site";
 
 export function Header() {
   return (
-    <header className="relative z-10 mx-auto flex w-[calc(100%-3rem)] max-w-300 flex-col gap-5 py-6 sm:w-[88%] sm:flex-row sm:items-center sm:justify-between sm:py-7">
+    <header className="relative z-10 mx-auto flex w-[calc(100%-3rem)] max-w-300 flex-col gap-5 py-6 max-sm:items-center max-sm:gap-2 max-sm:pb-3 sm:w-[88%] sm:flex-row sm:items-center sm:justify-between sm:py-7">
       <Link
         href="/"
         aria-label={`${siteConfig.name} home`}
@@ -16,7 +16,7 @@ export function Header() {
         </span>
       </Link>
       <nav aria-label="Main navigation">
-        <ul className="flex flex-wrap items-center gap-x-6 gap-y-3 text-xs sm:text-sm">
+        <ul className="flex flex-wrap items-center gap-x-6 gap-y-3 text-xs max-sm:justify-center sm:text-sm">
           {siteConfig.navigation.map(({ label, href }) => (
             <li key={href}>
               <Link

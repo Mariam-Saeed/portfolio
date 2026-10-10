@@ -94,7 +94,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="mx-auto w-[calc(100%-3rem)] max-w-300 border-b border-border pt-7 pb-8 sm:w-[88%]">
+      <div className="mx-auto w-[calc(100%-3rem)] max-w-300 border-b border-border pt-7 pb-8 max-sm:pt-3 sm:w-[88%]">
         <p className="flex items-center gap-3 text-[0.625rem] font-medium tracking-[0.1375rem] uppercase text-foreground/90">
           <span
             aria-hidden="true"

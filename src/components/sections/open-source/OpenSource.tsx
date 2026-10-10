@@ -22,7 +22,7 @@ export function OpenSource() {
           href={siteConfig.socials.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 rounded-sm text-sm text-accent outline-offset-4 hover:text-foreground focus-visible:outline-2 focus-visible:outline-accent motion-safe:transition-colors"
+          className="inline-flex items-center gap-2 rounded-sm text-sm text-accent outline-offset-4 hover:text-foreground focus-visible:outline-2 focus-visible:outline-accent motion-safe:transition-colors"
         >
           <span className="underline underline-offset-4">View GitHub profile</span>
           <span aria-hidden="true">→</span>

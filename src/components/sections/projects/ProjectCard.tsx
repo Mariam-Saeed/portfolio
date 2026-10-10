@@ -34,7 +34,7 @@ export function ProjectCard({ project, number }: ProjectCardProps) {
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex max-w-full items-baseline gap-3 rounded-sm outline-offset-4 hover:text-accent focus-visible:outline-2 focus-visible:outline-accent motion-safe:transition-colors"
+            className="inline-flex max-w-full items-baseline gap-2 rounded-sm outline-offset-4 hover:text-accent focus-visible:outline-2 focus-visible:outline-accent motion-safe:transition-colors"
           >
             <span className="min-w-0 wrap-break-word">{project.title}</span>
             <svg

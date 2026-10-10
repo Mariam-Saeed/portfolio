@@ -39,13 +39,13 @@ export function Footer() {
     <footer
       id="contact"
       aria-labelledby="contact-heading"
-      className="mx-auto -mt-px flex w-[calc(100%-3rem)] max-w-300 scroll-mt-6 flex-col gap-5 border-t border-border py-6 sm:w-[88%] sm:py-7 md:flex-row md:items-center md:justify-between"
+      className="mx-auto -mt-px flex w-[calc(100%-3rem)] max-w-300 scroll-mt-6 flex-col gap-5 border-t border-border py-6 max-sm:items-center max-sm:gap-4 sm:w-[88%] sm:py-7 md:flex-row md:items-center md:justify-between"
     >
-      <div className="flex flex-wrap items-center gap-x-10 gap-y-3">
+      <div className="flex flex-wrap items-center gap-x-10 gap-y-3 max-sm:w-full max-sm:flex-col max-sm:gap-2">
         <h2 id="contact-heading" className="text-base font-normal text-muted">
           Let&apos;s connect
         </h2>
-        <ul aria-label="Contact links" className="flex items-center gap-3">
+        <ul aria-label="Contact links" className="flex w-fit shrink-0 items-center justify-center gap-4">
           {socialLinks.map(({ label, href, external, icon }) => (
             <li key={href}>
               <a
@@ -53,7 +53,7 @@ export function Footer() {
                 aria-label={label}
                 target={external ? "_blank" : undefined}
                 rel={external ? "noopener noreferrer" : undefined}
-                className="flex size-11 items-center justify-center rounded-sm text-foreground outline-offset-2 hover:text-accent focus-visible:outline-2 focus-visible:outline-accent motion-safe:transition-colors"
+                className="flex h-11 w-6 items-center justify-center rounded-sm text-foreground outline-offset-2 hover:text-accent focus-visible:outline-2 focus-visible:outline-accent motion-safe:transition-colors"
               >
                 {icon}
               </a>
@@ -61,7 +61,7 @@ export function Footer() {
           ))}
         </ul>
       </div>
-      <p className="flex flex-wrap items-center gap-1.5 text-xs text-muted md:border-l md:border-border md:py-2 md:pl-12">
+      <p className="flex flex-wrap items-center gap-1.5 text-xs text-muted max-sm:justify-center md:border-l md:border-border md:py-2 md:pl-12">
         Made with
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" className="size-4 text-accent">
           <path d="M12 21S2 15 2 7.5a5.5 5.5 0 0 1 10-3.2 5.5 5.5 0 0 1 10 3.2C22 15 12 21 12 21Z" />

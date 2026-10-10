@@ -11,7 +11,7 @@ export function ContributionRow({ contribution }: ContributionRowProps) {
   return (
     <article
       aria-labelledby={headingId}
-      className="group grid min-w-0 grid-cols-1 items-center gap-x-6 gap-y-3 rounded-sm py-3 hover:bg-surface/30 motion-safe:transition-colors sm:grid-cols-12"
+      className="group grid min-w-0 grid-cols-1 items-center gap-x-6 gap-y-1 rounded-sm py-3 hover:bg-surface/30 max-sm:py-2.5 motion-safe:transition-colors sm:grid-cols-12"
     >
       <div className="flex min-w-0 items-center gap-5 sm:col-span-12 lg:col-span-4">
         <div
@@ -31,7 +31,7 @@ export function ContributionRow({ contribution }: ContributionRowProps) {
         href={contribution.pullRequestUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex w-fit items-center gap-5 rounded-sm py-1 text-xs outline-offset-4 hover:text-accent focus-visible:outline-2 focus-visible:outline-accent motion-safe:transition-colors sm:col-span-3 sm:justify-self-end lg:col-span-2"
+        className="inline-flex w-fit items-center gap-2 rounded-sm py-1 text-xs outline-offset-4 hover:text-accent focus-visible:outline-2 focus-visible:outline-accent motion-safe:transition-colors sm:col-span-3 sm:justify-self-end lg:col-span-2"
       >
         <span className="underline underline-offset-4">{prNumber ? `PR #${prNumber}` : "View PR"}</span>
         <span aria-hidden="true" className="text-base">↗</span>
