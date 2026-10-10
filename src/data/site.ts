@@ -4,8 +4,10 @@ export const siteConfig = {
 
   hero: {
     title: "I turn designs into fast, working websites.",
+    highlight: "websites.",
     description:
-      "Frontend developer specializing in Vue.js, Nuxt.js, and Tailwind CSS, with hands-on React.js experience. I build responsive, accessible, and maintainable web applications from design to deployment.",
+      "Frontend developer specializing in Vue.js, Nuxt.js, and Tailwind CSS, with hands-on React.js experience. I've delivered projects end to end, from design handoff to launch, and I'm exploring full-stack development.",
+    note: "Building\nthe web\none project\nat a time.",
   },
 
   navigation: [

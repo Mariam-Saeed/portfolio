@@ -45,6 +45,9 @@ Do not create abstractions or folders unless needed.
 ## Styling
 
 - Use Tailwind CSS utilities for styling.
+- Always prefer Tailwind CSS's built-in spacing, sizing, and typography utilities.
+- When a length is not available in Tailwind's default scale, use `rem` for arbitrary values.
+- Do not use `px` or `em` for custom CSS values or arbitrary Tailwind utilities.
 - Use existing design tokens instead of hardcoded colors.
 - Follow a mobile-first responsive approach.
 - Use `next/image` for appropriate image assets.
