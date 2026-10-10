@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Hero } from "@/components/sections/hero/Hero";
+import { OpenSource } from "@/components/sections/open-source/OpenSource";
 import { Projects } from "@/components/sections/projects/Projects";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <main>
         <Hero />
         <Projects />
+        <OpenSource />
       </main>
     </div>
   );
