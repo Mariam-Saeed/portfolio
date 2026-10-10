@@ -11,8 +11,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Mariam Saeed",
-  description: "Frontend Developer",
+  title: "Mariam Saeed | Frontend Developer",
+  description:
+    "Frontend Developer specializing in Vue.js, Nuxt.js, and modern web development. Explore my projects, technical skills, and open-source contributions.",
 };
 
 import type { ReactNode } from "react";
