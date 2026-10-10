@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mariam Saeed — Portfolio
 
-## Getting Started
+Personal portfolio for Mariam Saeed, a Frontend Developer. Showcases selected projects, open-source contributions, and contact links in a minimal, responsive dark layout.
 
-First, run the development server:
+**Live website:** [mariam-saeed.vercel.app](https://mariam-saeed.vercel.app/)
+
+## Tech stack
+
+- Next.js 16 with the App Router
+- React
+- TypeScript
+- Tailwind CSS v4
+
+## Features
+
+- Hero introduction with a technology overview.
+- Selected projects with descriptions, technology tags, and external links.
+- Open-source contributions with links to pull requests.
+- GitHub, LinkedIn, and email contact links.
+- Responsive layouts, semantic HTML, and keyboard focus styles.
+
+Project previews currently use styled placeholders until screenshots are added.
+
+## Getting started
+
+With Node.js and npm installed, run these commands from the project directory:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [localhost:3000](http://localhost:3000) to view the portfolio locally.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Checks
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npx tsc --noEmit
+```
 
-## Learn More
+### Production build
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```text
+src/
+├── app/          # Page composition, root layout, and global design tokens
+├── components/
+│   ├── layout/   # Header and footer
+│   └── sections/ # Hero, projects, and open-source contributions
+├── data/         # Site content, projects, and contributions
+└── types/        # Shared TypeScript types
+```
 
-## Deploy on Vercel
+Portfolio content is maintained in `src/data/`. Theme colors are defined in `src/app/globals.css`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The live portfolio is deployed on Vercel. The production build command is `npm run build`.
