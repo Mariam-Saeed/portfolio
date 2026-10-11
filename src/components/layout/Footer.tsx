@@ -12,7 +12,7 @@ export function Footer() {
           fill="currentColor"
           aria-hidden="true"
           focusable="false"
-          className="size-6"
+          className="size-5"
         >
           <path d="M12 .75a11.25 11.25 0 0 0-3.56 21.92c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.94.1-.73.39-1.22.71-1.5-2.5-.28-5.13-1.25-5.13-5.56 0-1.23.44-2.23 1.16-3.02-.12-.29-.5-1.43.11-2.98 0 0 .94-.3 3.09 1.15a10.76 10.76 0 0 1 5.63 0c2.15-1.45 3.09-1.15 3.09-1.15.61 1.55.23 2.69.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.32-2.64 5.28-5.15 5.56.4.35.76 1.03.76 2.08v3.09c0 .3.2.65.77.54A11.25 11.25 0 0 0 12 .75Z" />
         </svg>
@@ -28,7 +28,7 @@ export function Footer() {
           fill="currentColor"
           aria-hidden="true"
           focusable="false"
-          className="size-6"
+          className="size-5"
         >
           <path
             fillRule="evenodd"
@@ -52,7 +52,7 @@ export function Footer() {
           strokeLinejoin="round"
           aria-hidden="true"
           focusable="false"
-          className="size-6"
+          className="size-5"
         >
           <rect x="2" y="4" width="20" height="16" rx="2" />
           <path d="m3 6 9 7 9-7" />
@@ -65,15 +65,15 @@ export function Footer() {
     <footer
       id="contact"
       aria-labelledby="contact-heading"
-      className="mx-auto -mt-px flex w-[calc(100%-3rem)] max-w-300 scroll-mt-6 flex-col gap-5 border-t border-border py-6 max-sm:items-start max-sm:gap-2 max-sm:pb-4 sm:w-[88%] sm:py-7 md:flex-row md:items-center md:justify-between"
+      className="mx-auto -mt-px flex w-[calc(100%-3rem)] max-w-300 scroll-mt-6 flex-col items-start gap-3 border-t border-border py-6 font-sans text-muted sm:w-[88%] sm:py-7 md:flex-row md:items-center md:justify-between"
     >
-      <div className="flex flex-wrap items-center gap-x-10 gap-y-3 max-sm:w-full max-sm:flex-nowrap max-sm:justify-between max-sm:gap-2">
-        <h2 id="contact-heading" className="text-base font-normal text-muted">
+      <div className="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-2">
+        <h2 id="contact-heading" className="text-sm font-normal">
           Let&apos;s connect
         </h2>
         <ul
           aria-label="Contact links"
-          className="flex w-fit shrink-0 items-center justify-center gap-2 max-sm:gap-0"
+          className="flex w-fit shrink-0 items-center gap-1"
         >
           {socialLinks.map(({ label, href, external, icon }) => (
             <li key={href}>
@@ -82,7 +82,7 @@ export function Footer() {
                 aria-label={label}
                 target={external ? "_blank" : undefined}
                 rel={external ? "noopener noreferrer" : undefined}
-                className="flex h-11 w-6 items-center justify-center rounded-sm text-foreground outline-offset-2 hover:text-accent focus-visible:outline-2 focus-visible:outline-accent max-sm:w-9 motion-safe:transition-colors"
+                className="flex h-11 w-8 items-center justify-center rounded-sm outline-offset-2 hover:text-accent focus-visible:text-accent focus-visible:outline-2 focus-visible:outline-accent motion-safe:transition-colors"
               >
                 {icon}
               </a>
@@ -90,7 +90,7 @@ export function Footer() {
           ))}
         </ul>
       </div>
-      <p className="flex flex-wrap items-center gap-1.5 text-xs text-muted max-sm:justify-start max-sm:text-[0.6875rem] max-sm:leading-4 md:py-2">
+      <p className="flex flex-wrap items-center gap-1.5 text-sm leading-relaxed">
         Made with
         <svg
           viewBox="0 0 24 24"

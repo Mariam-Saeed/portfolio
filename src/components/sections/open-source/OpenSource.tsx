@@ -8,14 +8,13 @@ export function OpenSource() {
     <section
       id="open-source"
       aria-labelledby="open-source-heading"
-      className="mx-auto w-[calc(100%-3rem)] max-w-300 scroll-mt-6 border-b border-border pt-5 pb-6 sm:w-[88%]"
+      className="mx-auto w-[calc(100%-3rem)] max-w-300 scroll-mt-6 border-b border-border pt-10 pb-12 sm:w-[88%] sm:py-16"
     >
       <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-4">
         <h2
           id="open-source-heading"
-          className="flex items-center gap-4 text-xs font-medium tracking-widest uppercase text-foreground/90"
+          className="font-serif text-3xl font-normal text-foreground sm:text-4xl"
         >
-          <span aria-hidden="true" className="size-2 shrink-0 rounded-full bg-accent" />
           Open Source
         </h2>
         <a
@@ -29,7 +28,7 @@ export function OpenSource() {
           <span className="sr-only"> (opens in a new tab)</span>
         </a>
       </div>
-      <ul className="mt-4 divide-y divide-border">
+      <ul className="mt-8 divide-y divide-border sm:mt-12">
         {[...contributions].reverse().map((contribution) => (
           <li key={contribution.id}>
             <ContributionRow contribution={contribution} />

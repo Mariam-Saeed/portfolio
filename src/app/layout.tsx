@@ -2,11 +2,18 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 
-import { Manrope } from "next/font/google";
+import { Instrument_Serif, Manrope } from "next/font/google";
 
 const manrope = Manrope({
   subsets: ["latin"],
   variable: "--font-manrope",
+  display: "swap",
+});
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-instrument-serif",
   display: "swap",
 });
 
@@ -25,7 +32,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       className="h-full scroll-smooth motion-reduce:scroll-auto"
       data-scroll-behavior="smooth"
     >
-      <body className={`${manrope.variable} font-sans antialiased`}>
+      <body className={`${manrope.variable} ${instrumentSerif.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>

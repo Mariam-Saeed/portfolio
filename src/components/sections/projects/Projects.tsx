@@ -7,21 +7,20 @@ export function Projects() {
     <section
       id="work"
       aria-labelledby="projects-heading"
-      className="mx-auto w-[calc(100%-3rem)] max-w-300 scroll-mt-6 border-b border-border pt-5 pb-8 sm:w-[88%]"
+      className="mx-auto w-[calc(100%-3rem)] max-w-300 scroll-mt-6 border-b border-border pt-10 pb-12 sm:w-[88%] sm:py-16"
     >
       <h2
         id="projects-heading"
-        className="flex items-center gap-4 text-xs font-medium tracking-widest uppercase text-foreground/90"
+        className="font-serif text-3xl font-normal text-foreground sm:text-4xl"
       >
-        <span
-          aria-hidden="true"
-          className="size-2 shrink-0 rounded-full bg-accent"
-        />
         Selected Work
       </h2>
-      <ol className="mt-6 space-y-10 max-sm:space-y-6 lg:space-y-6">
+      <ol className="mt-8 space-y-12 sm:mt-12 sm:space-y-16">
         {projects.map((project, index) => (
-          <li key={project.id}>
+          <li
+            key={project.id}
+            className="border-b border-border pb-12 last:border-b-0 last:pb-0 sm:pb-16 sm:last:pb-0"
+          >
             <ProjectCard project={project} number={index + 1} />
           </li>
         ))}

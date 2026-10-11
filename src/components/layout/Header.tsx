@@ -71,7 +71,7 @@ export function Header() {
             href="#hero"
             onClick={handleSectionClick}
             aria-label={`${siteConfig.name} home`}
-            className="w-fit text-sm font-bold tracking-widest uppercase outline-offset-8 hover:text-accent focus-visible:outline-2 focus-visible:outline-accent max-sm:shrink-0 max-sm:text-xs max-sm:tracking-wide max-sm:whitespace-nowrap motion-safe:transition-colors"
+            className="w-fit font-serif text-xl leading-none font-normal outline-offset-8 hover:text-accent focus-visible:outline-2 focus-visible:outline-accent max-sm:shrink-0 max-sm:whitespace-nowrap motion-safe:transition-colors sm:text-3xl"
           >
             {siteConfig.name}
             <span className="text-accent" aria-hidden="true">
@@ -79,7 +79,7 @@ export function Header() {
             </span>
           </a>
           <nav aria-label="Main navigation" className="max-sm:ml-auto max-sm:shrink-0">
-            <ul className="flex flex-wrap items-center gap-x-6 gap-y-3 text-xs max-sm:flex-nowrap max-sm:gap-x-2 max-sm:whitespace-nowrap sm:text-sm">
+            <ul className="flex flex-wrap items-center gap-x-6 gap-y-3 text-xs text-foreground/80 max-sm:flex-nowrap max-sm:gap-x-2 max-sm:whitespace-nowrap sm:text-sm">
               {siteConfig.navigation.map(({ label, href }) => (
                 <li key={href}>
                   <a
