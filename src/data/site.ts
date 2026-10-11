@@ -3,10 +3,10 @@ export const siteConfig = {
   role: "Frontend Developer",
 
   hero: {
-    title: "I turn designs into fast, working websites.",
+    title: "I care about how things look, work, and feel.",
     highlight: "websites.",
     description:
-      "Frontend developer specializing in Vue.js, Nuxt.js, and Tailwind CSS, with hands-on React.js experience. I've delivered projects end to end, from design handoff to launch, and I'm exploring full-stack development.",
+      "I'm a Frontend Developer with 2+ years of experience building and shipping websites and web applications. I've taken projects from design handoff to launch, and I enjoy working on everything from the smallest UI details to the bigger technical challenges.",
     note: "Building\nthe web\none project\nat a time.",
   },
 

@@ -20,7 +20,7 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   title: "Mariam Saeed | Frontend Developer",
   description:
-    "Frontend Developer specializing in Vue.js, Nuxt.js, and modern web development. Explore my projects, technical skills, and open-source contributions.",
+    "Explore selected work, open-source contributions, and my experience in frontend development.",
 };
 
 import type { ReactNode } from "react";
@@ -32,7 +32,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       className="h-full scroll-smooth motion-reduce:scroll-auto"
       data-scroll-behavior="smooth"
     >
-      <body className={`${manrope.variable} ${instrumentSerif.variable} font-sans antialiased`}>
+      <body
+        className={`${manrope.variable} ${instrumentSerif.variable} font-sans antialiased`}
+      >
         {children}
       </body>
     </html>

@@ -14,7 +14,7 @@ export function Hero() {
         <p className="text-sm font-normal text-accent md:text-base">{role}</p>
         <h1
           id="hero-heading"
-          className="mt-4 max-w-4xl font-serif text-4xl leading-tight font-normal text-foreground sm:mt-5 sm:text-5xl md:text-6xl lg:text-7xl"
+          className="mt-4 max-w-3xl font-serif text-4xl leading-tight font-normal text-foreground sm:mt-5 sm:text-5xl md:text-6xl lg:text-7xl"
         >
           {hero.title}
         </h1>
