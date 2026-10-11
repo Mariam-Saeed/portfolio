@@ -10,7 +10,7 @@ export function Hero() {
 
   return (
     <section aria-labelledby="hero-heading" id="hero">
-      <div className="mx-auto w-[calc(100%-3rem)] max-w-300 border-b border-border pt-6 pb-8 sm:w-[88%] sm:pt-20 sm:pb-16">
+      <div className="mx-auto w-[calc(100%-3rem)] max-w-300 border-b border-border pt-1 pb-8 sm:w-[88%] sm:pt-4 sm:pb-12">
         <p className="text-sm font-normal text-accent md:text-base">{role}</p>
         <h1
           id="hero-heading"

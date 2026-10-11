@@ -64,14 +64,14 @@ const technologies = [
 
 export function TechnologyList() {
   return (
-    <ul aria-label="Technologies I work with" className="mt-10 flex flex-wrap items-center gap-x-7 gap-y-5 sm:gap-x-8">
+    <ul aria-label="Technologies I work with" className="mt-8 flex flex-wrap items-center gap-x-7 gap-y-5 sm:gap-x-8">
       {technologies.map(({ name, logo }) => (
         <li
           key={name}
           tabIndex={0}
-          className="group flex items-center gap-3 rounded-sm text-xs outline-offset-4 focus-visible:outline-2 focus-visible:outline-accent sm:text-sm"
+          className="flex items-center gap-3 rounded-sm text-xs outline-offset-4 focus-visible:outline-2 focus-visible:outline-accent sm:text-sm"
         >
-          <span className="inline-flex shrink-0 grayscale sepia-25 group-hover:grayscale-0 group-hover:sepia-0 group-focus-visible:grayscale-0 group-focus-visible:sepia-0">
+          <span className="inline-flex shrink-0">
             {logo}
           </span>
           <span>{name}</span>

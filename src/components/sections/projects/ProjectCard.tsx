@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import type { Project } from "@/types";
 
 type ProjectCardProps = {
@@ -15,12 +17,15 @@ export function ProjectCard({ project, number }: ProjectCardProps) {
       className="grid min-w-0 grid-cols-1 items-center gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16"
     >
       <div
-        className={`flex aspect-16/10 min-w-0 flex-col items-center justify-center gap-2 overflow-hidden rounded-sm border border-border bg-surface px-6 text-center ${imageOnRight ? "lg:order-2" : ""}`}
+        className={`relative aspect-16/10 min-w-0 overflow-hidden rounded-sm border border-border bg-surface ${imageOnRight ? "lg:order-2" : ""}`}
       >
-        <p className="text-sm font-medium text-foreground/70 sm:text-base">
-          {project.title}
-        </p>
-        <p className="text-xs text-muted">Preview coming soon</p>
+        <Image
+          src={project.image}
+          alt={project.imageAlt}
+          fill
+          sizes="(min-width: 85.25rem) 35.5rem, (min-width: 80rem) calc(44vw - 2rem), (min-width: 64rem) calc(44vw - 1.5rem), (min-width: 40rem) 88vw, calc(100vw - 3rem)"
+          className="object-cover"
+        />
       </div>
 
       <div className={`min-w-0 ${imageOnRight ? "lg:order-1" : ""}`}>
@@ -62,9 +67,11 @@ export function ProjectCard({ project, number }: ProjectCardProps) {
         </p>
         <ul aria-label={`${project.title} technologies`} className="mt-5 flex flex-wrap gap-x-2 gap-y-1 text-sm leading-relaxed text-foreground/80">
           {project.technologies.map((technology, index) => (
-            <li key={technology}>
+            <li key={technology} className="inline-flex items-center gap-2">
               {technology}
-              {index < project.technologies.length - 1 ? "," : ""}
+              {index < project.technologies.length - 1 && (
+                <span aria-hidden="true" className="size-1 shrink-0 rounded-full bg-accent" />
+              )}
             </li>
           ))}
         </ul>

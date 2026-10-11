@@ -11,7 +11,7 @@ export function ContributionRow({ contribution }: ContributionRowProps) {
   return (
     <article
       aria-labelledby={headingId}
-      className="grid min-w-0 grid-cols-1 items-center gap-x-8 gap-y-3 py-6 sm:py-8 lg:grid-cols-12"
+      className="grid min-w-0 grid-cols-1 items-center gap-x-8 gap-y-3 lg:grid-cols-12"
     >
       <h3
         id={headingId}

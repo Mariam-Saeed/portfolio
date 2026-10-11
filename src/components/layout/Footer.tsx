@@ -65,7 +65,7 @@ export function Footer() {
     <footer
       id="contact"
       aria-labelledby="contact-heading"
-      className="mx-auto -mt-px flex w-[calc(100%-3rem)] max-w-300 scroll-mt-6 flex-col items-start gap-3 border-t border-border py-6 font-sans text-muted sm:w-[88%] sm:py-7 md:flex-row md:items-center md:justify-between"
+      className="mx-auto -mt-px flex w-[calc(100%-3rem)] max-w-300 scroll-mt-6 flex-col items-start gap-3 border-t border-border py-8 font-sans text-muted sm:w-[88%] sm:py-12 md:flex-row md:items-center md:justify-between"
     >
       <div className="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-2">
         <h2 id="contact-heading" className="text-sm font-normal">

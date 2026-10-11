@@ -8,7 +8,7 @@ export function OpenSource() {
     <section
       id="open-source"
       aria-labelledby="open-source-heading"
-      className="mx-auto w-[calc(100%-3rem)] max-w-300 scroll-mt-6 border-b border-border pt-10 pb-12 sm:w-[88%] sm:py-16"
+      className="mx-auto w-[calc(100%-3rem)] max-w-300 scroll-mt-6 border-b border-border py-8 sm:w-[88%] sm:py-12"
     >
       <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-4">
         <h2
@@ -28,9 +28,9 @@ export function OpenSource() {
           <span className="sr-only"> (opens in a new tab)</span>
         </a>
       </div>
-      <ul className="mt-8 divide-y divide-border sm:mt-12">
+      <ul className="mt-8 divide-y divide-border sm:mt-10">
         {[...contributions].reverse().map((contribution) => (
-          <li key={contribution.id}>
+          <li key={contribution.id} className="py-6 first:pt-0 last:pb-0">
             <ContributionRow contribution={contribution} />
           </li>
         ))}

@@ -5,6 +5,7 @@ export type Project = {
   company: string;
   description: string;
   image: string;
+  imageAlt: string;
   url: string;
   technologies: string[];
 };

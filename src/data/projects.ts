@@ -8,7 +8,8 @@ export const projects: Project[] = [
     company: "Ntsal",
     description:
       "Luxury real estate website for a North Coast villa development, with cluster and unit browsing, facilities filtering, and Meta Pixel tracking.",
-    image: "/images/projects/marsa-baghush.webp",
+    image: "/images/projects/marsa-baghush.jpeg",
+    imageAlt: "Marsa Baghush homepage with bilingual branding over turquoise waves.",
     url: "https://marsabaghush.com",
     technologies: ["Nuxt.js", "Vue.js", "Tailwind CSS", "Pinia", "JavaScript"],
   },
@@ -19,7 +20,8 @@ export const projects: Project[] = [
     company: "Ntsal",
     description:
       "Website for a design studio specializing in interior, architecture, and landscape, with categorized work pages and individual project showcases.",
-    image: "/images/projects/design-avenue.webp",
+    image: "/images/projects/design-avenue.jpeg",
+    imageAlt: "Design Avenue residential projects page with illustrated branches and three interior previews.",
     url: "https://thedesignavenue.net",
     technologies: ["Nuxt.js", "Vue.js", "Tailwind CSS", "Pinia", "JavaScript"],
   },
@@ -30,7 +32,8 @@ export const projects: Project[] = [
     company: "Ntsal",
     description:
       "Digital docuseries website showcasing Egyptian architectural landmarks, featuring CMS-driven episode layouts, interactive storytelling, and custom navigation.",
-    image: "/images/projects/the-local-show.webp",
+    image: "/images/projects/the-local-show.jpeg",
+    imageAlt: "The Local Show website with a docuseries introduction and Arabic and English branding on a black background.",
     url: "https://www.thelocalshow.net",
     technologies: ["Nuxt.js", "Vue.js", "Tailwind CSS", "Pinia"],
   },
@@ -41,7 +44,8 @@ export const projects: Project[] = [
     company: "Ntsal",
     description:
       "Digital archive for Egyptian painter Chafik Charobim, with bilingual support and category-based artwork filtering.",
-    image: "/images/projects/chafik-charobim.webp",
+    image: "/images/projects/chafik-charobim.jpeg",
+    imageAlt: "Chafik Charobim archive homepage with an artist biography and portrait, landscape, and seascape paintings.",
     url: "https://charobim.art",
     technologies: ["Nuxt.js", "Vue.js", "Tailwind CSS", "Pinia"],
   },
