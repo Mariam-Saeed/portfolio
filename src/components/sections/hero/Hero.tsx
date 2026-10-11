@@ -3,7 +3,7 @@ import { siteConfig } from "@/data/site";
 import { TechnologyList } from "./TechnologyList";
 
 // Paths are relative to public/: place the CV at public/cv.pdf or update this path.
-const cvPdfPath = "/cv.pdf";
+const cvPdfPath = "/Mariam Saeed-Frontend Developer.pdf";
 
 export function Hero() {
   const { hero, role } = siteConfig;
