@@ -2,7 +2,7 @@
 
 Personal portfolio for Mariam Saeed, a Frontend Developer. Showcases selected projects, open-source contributions, and contact links in a minimal, responsive dark layout.
 
-**Live website:** [mariam-saeed.vercel.app](https://mariam-saeed.vercel.app/)
+**Live website:** <a href="https://mariam-saeed.vercel.app/" target="_blank" rel="noopener noreferrer">mariam-saeed.vercel.app</a>
 
 ## Tech stack
 

@@ -20,7 +20,11 @@ import type { ReactNode } from "react";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className="h-full">
+    <html
+      lang="en"
+      className="h-full scroll-smooth motion-reduce:scroll-auto"
+      data-scroll-behavior="smooth"
+    >
       <body className={`${manrope.variable} font-sans antialiased`}>
         {children}
       </body>

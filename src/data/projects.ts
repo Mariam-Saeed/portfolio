@@ -2,17 +2,6 @@ import type { Project } from "@/types";
 
 export const projects: Project[] = [
   {
-    id: "chafik-charobim",
-    title: "Chafik Charobim",
-    year: 2025,
-    company: "Ntsal",
-    description:
-      "Digital archive for Egyptian painter Chafik Charobim, with bilingual support and category-based artwork filtering.",
-    image: "/images/projects/chafik-charobim.webp",
-    url: "https://charobim.art",
-    technologies: ["Nuxt.js", "Vue.js", "Tailwind CSS", "Pinia"],
-  },
-  {
     id: "marsa-baghush",
     title: "Marsa Baghush",
     year: 2026,
@@ -43,6 +32,17 @@ export const projects: Project[] = [
       "Digital docuseries website showcasing Egyptian architectural landmarks, featuring CMS-driven episode layouts, interactive storytelling, and custom navigation.",
     image: "/images/projects/the-local-show.webp",
     url: "https://www.thelocalshow.net",
+    technologies: ["Nuxt.js", "Vue.js", "Tailwind CSS", "Pinia"],
+  },
+  {
+    id: "chafik-charobim",
+    title: "Chafik Charobim",
+    year: 2025,
+    company: "Ntsal",
+    description:
+      "Digital archive for Egyptian painter Chafik Charobim, with bilingual support and category-based artwork filtering.",
+    image: "/images/projects/chafik-charobim.webp",
+    url: "https://charobim.art",
     technologies: ["Nuxt.js", "Vue.js", "Tailwind CSS", "Pinia"],
   },
 ];

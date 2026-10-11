@@ -7,7 +7,11 @@ export function Hero() {
   const highlightStart = hero.title.lastIndexOf(hero.highlight);
 
   return (
-    <section aria-labelledby="hero-heading" className="relative isolate">
+    <section
+      aria-labelledby="hero-heading"
+      id="hero"
+      className="relative isolate"
+    >
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 -z-10 overflow-hidden text-accent"

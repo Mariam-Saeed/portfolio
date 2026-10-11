@@ -14,7 +14,15 @@
 }
 
 :root {
+  --header-height: 5.5rem;
   color-scheme: dark;
+  scroll-padding-top: var(--header-height);
+}
+
+@media (min-width: 40rem) {
+  :root {
+    --header-height: 5.25rem;
+  }
 }
 
 body {
