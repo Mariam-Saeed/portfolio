@@ -2,8 +2,7 @@ import { siteConfig } from "@/data/site";
 
 import { TechnologyList } from "./TechnologyList";
 
-// Paths are relative to public/: place the CV at public/cv.pdf or update this path.
-const cvPdfPath = "/Mariam Saeed-Frontend Developer.pdf";
+const cvPdfPath = "https://mariam-saeed.github.io/resume/resume.pdf";
 
 export function Hero() {
   const { hero, role } = siteConfig;
@@ -14,7 +13,7 @@ export function Hero() {
         <p className="text-sm font-normal text-accent md:text-base">{role}</p>
         <h1
           id="hero-heading"
-          className="mt-4 max-w-3xl font-serif text-4xl leading-tight font-normal text-foreground sm:mt-5 sm:text-5xl md:text-6xl lg:text-7xl"
+          className="mt-4 max-w-2xl font-serif text-4xl leading-tight font-normal text-foreground sm:mt-5 sm:text-5xl md:text-6xl lg:text-7xl"
         >
           {hero.title}
         </h1>
