@@ -69,7 +69,7 @@ export function TechnologyList() {
         <li
           key={name}
           tabIndex={0}
-          className="flex items-center gap-3 rounded-sm text-xs outline-offset-4 focus-visible:outline-2 focus-visible:outline-accent sm:text-sm"
+          className="flex items-center gap-2.5 rounded-sm text-xs outline-offset-4 focus-visible:outline-2 focus-visible:outline-accent sm:text-sm"
         >
           <span className="inline-flex shrink-0">
             {logo}

@@ -66,7 +66,7 @@ export function Header() {
         ref={headerRef}
         className="fixed inset-x-0 top-0 z-50 bg-background/95 backdrop-blur-sm max-sm:bg-background/90 max-sm:backdrop-blur-md"
       >
-        <div className="mx-auto flex w-[calc(100%-3rem)] max-w-300 flex-col gap-5 py-6 max-sm:flex-row max-sm:flex-nowrap max-sm:items-center max-sm:justify-between max-sm:gap-x-2 max-sm:gap-y-2 max-sm:pb-3 sm:w-[88%] sm:flex-row sm:items-center sm:justify-between sm:py-7">
+        <div className="mx-auto flex w-[calc(100%-3rem)] max-w-300 flex-col gap-5 py-6 max-sm:flex-row max-sm:flex-nowrap max-sm:items-center max-sm:justify-between max-sm:gap-x-2 max-sm:gap-y-2 max-sm:pb-2 sm:w-[88%] sm:flex-row sm:items-center sm:justify-between sm:py-7">
           <a
             href="#hero"
             onClick={handleSectionClick}

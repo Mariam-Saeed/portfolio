@@ -9,7 +9,7 @@ export function Hero() {
 
   return (
     <section aria-labelledby="hero-heading" id="hero">
-      <div className="mx-auto w-[calc(100%-3rem)] max-w-300 border-b border-border pt-1 pb-8 sm:w-[88%] sm:pt-4 sm:pb-12">
+      <div className="mx-auto w-[calc(100%-3rem)] max-w-300 border-b border-border pt-0 pb-8 sm:w-[88%] sm:pt-4 sm:pb-12">
         <p className="text-sm font-normal text-accent md:text-base">{role}</p>
         <h1
           id="hero-heading"
@@ -24,7 +24,7 @@ export function Hero() {
           href={cvPdfPath}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-4 inline-flex items-center gap-2 py-1 text-sm font-medium text-accent outline-offset-4 hover:text-foreground focus-visible:text-foreground focus-visible:outline-2 focus-visible:outline-accent sm:mt-6"
+          className="mt-4 inline-flex items-center gap-1.5 py-1 text-sm font-medium text-accent outline-offset-4 hover:text-foreground focus-visible:text-foreground focus-visible:outline-2 focus-visible:outline-accent sm:mt-6"
         >
           <span className="underline decoration-current/50 underline-offset-4">
             View CV

@@ -67,13 +67,13 @@ export function Footer() {
       aria-labelledby="contact-heading"
       className="mx-auto -mt-px flex w-[calc(100%-3rem)] max-w-300 scroll-mt-6 flex-col items-start gap-3 border-t border-border py-8 font-sans text-muted sm:w-[88%] sm:py-12 md:flex-row md:items-center md:justify-between"
     >
-      <div className="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-2">
+      <div className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-2">
         <h2 id="contact-heading" className="text-sm font-normal">
           Let&apos;s connect
         </h2>
         <ul
           aria-label="Contact links"
-          className="flex w-fit shrink-0 items-center gap-1"
+          className="flex w-fit shrink-0 items-center gap-0"
         >
           {socialLinks.map(({ label, href, external, icon }) => (
             <li key={href}>
